@@ -12,10 +12,6 @@ export function ActiveLink({children,shouldMatchExactHref = false,...rest}:Activ
   
   let isActive = false;
 
-  console.log('asPath',asPath)
-  console.log('rest.href',rest.href)
-  console.log('rest.as',rest.as)
-
   if(shouldMatchExactHref && (asPath===rest.href || asPath === rest.as)){
     isActive=true
   }
